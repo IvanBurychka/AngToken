@@ -3,9 +3,10 @@ import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-messages',
-  template: `<div *ngFor="let message of messages"> 
-  <mat-card>{{ message.message }}</mat-card>
-</div>`
+  template: `
+  <div *ngFor="let message of messages"> 
+    <mat-card>{{ message.message }}</mat-card>
+  </div>`
   
 })
 export class MessagesComponent implements OnInit {

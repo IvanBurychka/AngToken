@@ -17,11 +17,15 @@ import { MessagesComponent } from './messages.component';
 import { RegisterComponent } from './register.component';
 import { LoginComponent } from './login.component';
 import { AuthService } from './auth.service';
+import { UsersComponent } from './user.component';
 
 
 const routes = [
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'profile/:id', component: UsersComponent },
+  
 ]
 
 @NgModule({
@@ -29,7 +33,8 @@ const routes = [
     AppComponent,
     MessagesComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

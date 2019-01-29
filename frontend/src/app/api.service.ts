@@ -13,4 +13,8 @@ export class ApiService {
         return this.http.get<any>('http://localhost:3000/posts');
     }
 
+    getUsers (): Observable<any>{
+        return this.http.get<any>('http://localhost:3000/users');
+    }
+
 }

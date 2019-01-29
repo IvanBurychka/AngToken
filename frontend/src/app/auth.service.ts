@@ -15,10 +15,10 @@ export class AuthService {
 
     loginUser (loginData){
         this.http.post('http://localhost:3000/login', loginData)
-        .subscribe( data => {
-            console.log(data)
-            localStorage.setItem('token', data.token);
-            
-        });
+            .subscribe( data => {
+                console.log(data)
+                localStorage.setItem('token', data);
+                
+            });
     }
 }
